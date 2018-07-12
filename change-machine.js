@@ -2,13 +2,15 @@
 
 let readline = require('readline-sync')
 let amount = Number(readline.question('please enter you amount in cents '))
-let centAsAString = (amount + ' cents makes: ' )
-let cent = Number(centAsAString)
+//let centAsAString = (amount + ' cents makes: ' )
+//let cent = Number(centAsAString)
 
 console.log (amount + ' cents make')
 
 let quarters = Math.floor (amount / 25)
 console.log(quarters + ' quarters')
+
+//cents -= quarter * 25
 
 amount = amount - quarters * 25
 
